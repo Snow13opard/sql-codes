@@ -1,7 +1,9 @@
+# mysql backup script (Currently working on some things)
+`cd /etc/cron.daily/`
+`chmod 755 /etc/cron.daily/dbbackup-daily.sh`
+`nano /etc/cron.daily/dbbackup-daily.sh`
 
-# cd /etc/cron.daily/
-# chmod 755 /etc/cron.daily/dbbackup-daily.sh
-# nano /etc/cron.daily/dbbackup-daily.sh
+Paste this:
 
 ```
 +#!/bin/sh
@@ -22,3 +24,5 @@
 +echo "*****************" >> "$logfile"
 +exit 0
 ```
+
+Save the file.
