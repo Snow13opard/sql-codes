@@ -1,6 +1,8 @@
 # mysql backup script (Currently working on some things)
 `cd /etc/cron.daily/`
+
 `chmod 755 /etc/cron.daily/dbbackup-daily.sh`
+
 `nano /etc/cron.daily/dbbackup-daily.sh`
 
 Paste this:
