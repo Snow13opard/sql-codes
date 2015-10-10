@@ -1,4 +1,4 @@
-# mysql backup script
+# MySQL Codes
 `cd /etc/cron.daily/`
 
 `chmod 755 /etc/cron.daily/dbbackup-daily.sh`
