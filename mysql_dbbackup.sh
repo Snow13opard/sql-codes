@@ -1,5 +1,4 @@
 #!/bin/sh
-#This is a new script that I'm currently working on.
 read -p "Please enter your mysql username  : " username
 read -p "Please enter your mysql password  : " password
 read -p "Please enter your database name  : " mydatabase
@@ -13,7 +12,7 @@ if [ "$RESULT" == "$mydatabase" ]; then
   logfile="$backupfolder/"backup_log_"$(date +'%Y_%m')".txt
 
   echo "mysqldump started at $(date +'%d-%m-%Y %H:%M:%S')" >> "$logfile"
-  mysqldump --user=$username --password=$password --default-character-set=utf8 mydatabase | gzip > "$fullpathbackupfile"
+  mysqldump --user=$username --password=$password --default-character-set=utf8 $mydatabase | gzip > "$fullpathbackupfile"
   echo "mysqldump finished at $(date +'%d-%m-%Y %H:%M:%S')" >> "$logfile"
 
   find "$backupfolder" -name db_backup_* -mtime +8 -exec rm {} \;
