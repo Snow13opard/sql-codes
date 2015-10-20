@@ -1,4 +1,7 @@
-# MySQL Codes
+# sql codes
+
+### Backing up MySQL/MariaDB
+
 `cd /etc/cron.daily/`
 
 `chmod 755 /etc/cron.daily/dbbackup-daily.sh`
