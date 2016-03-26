@@ -1,12 +1,8 @@
-Backing up MySQL/MariaDB
-
-cd /etc/cron.daily/
-
-chmod 755 /etc/cron.daily/dbbackup-daily.sh
-
-nano /etc/cron.daily/dbbackup-daily.sh
-
-Paste this:
+#Backing up MySQL/MariaDB
+#cd /etc/cron.daily/
+#chmod 755 /etc/cron.daily/dbbackup-daily.sh
+#nano /etc/cron.daily/dbbackup-daily.sh
+#Paste this:
 
 #!/bin/sh
 now="$(date +'%d_%m_%Y_%H_%M_%S')"
